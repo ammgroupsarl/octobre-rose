@@ -1,5 +1,5 @@
 const opening=document.getElementById('opening'),toast=document.getElementById('toast'),cfg=window.OCTOBRE_ROSE_CONFIG||{};
-const online=Boolean(cfg.supabaseUrl&&cfg.supabaseAnonKey),headers={apikey:cfg.supabaseAnonKey,Authorization:`Bearer ${cfg.supabaseAnonKey}`,'Content-Type':'application/json'};
+const online=Boolean(cfg.supabaseUrl&&cfg.supabaseAnonKey),headers={apikey:cfg.supabaseAnonKey,'Content-Type':'application/json'};
 function notify(t){toast.textContent=t;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000)}
 
 // Ambiance originale générée dans le navigateur : aucun fichier musical commercial.
